@@ -94,3 +94,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
   
+
+// Bonus Deliverable , removing a review when clicked.
+document.addEventListener('DOMContentLoaded', () => {
+    const reviewList = document.getElementById('review-list');
+  
+    // Add a click event listener to the review list
+    reviewList.addEventListener('click', (e) => {
+      if (e.target.tagName === 'LI') {
+        // Check if the clicked element is an <li> element
+        e.target.remove(); // Remove the clicked review
+      }
+    });
+  
+  });
