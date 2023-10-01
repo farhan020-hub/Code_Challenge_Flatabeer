@@ -1,6 +1,6 @@
 // Code here
-// Deliverables below
 // The image URL of the first beer is not working.
+// Deliverable 1
 const init = () => {
     
     const beerDetails = document.getElementById('beer-details');
@@ -34,7 +34,7 @@ const init = () => {
 
 document.addEventListener('DOMContentLoaded', init);
 
-
+// Deliverable 2
  // Function to fetch and render the beer menu
  function fetchAndRenderBeerList() {
 
@@ -65,9 +65,12 @@ document.addEventListener('DOMContentLoaded', init);
         });
 }
 
+
 // Call the fetchAndRenderBeerlist function when the page loads
 document.addEventListener('DOMContentLoaded', fetchAndRenderBeerList);
 
+
+// Deliverable 3
 document.addEventListener('DOMContentLoaded', () => {
     const reviewForm = document.getElementById('review-form');
     const reviewList = document.getElementById('review-list');
