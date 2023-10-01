@@ -3,9 +3,9 @@
 // Deliverable 1
 const init = () => {
     
-    const beerDetails = document.getElementById('beer-details');
-    const beerName = document.getElementById('beer-name');
-    const beerImage = document.getElementById('beer-image');
+    const beerDetails = document.getElementById('beer-details'); //getting the id of beer-details
+    const beerName = document.getElementById('beer-name'); //getting the id of beer-name
+    const beerImage = document.getElementById('beer-image'); //getting the id of beer-image
     const beerDescription = document.getElementById('beer-description');
     const reviewList = document.getElementById('review-list');
     
