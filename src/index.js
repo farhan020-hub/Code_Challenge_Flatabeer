@@ -6,8 +6,8 @@ const init = () => {
     const beerDetails = document.getElementById('beer-details'); //getting the id of beer-details
     const beerName = document.getElementById('beer-name'); //getting the id of beer-name
     const beerImage = document.getElementById('beer-image'); //getting the id of beer-image
-    const beerDescription = document.getElementById('beer-description');
-    const reviewList = document.getElementById('review-list');
+    const beerDescription = document.getElementById('beer-description');//getting the id of beer-description
+    const reviewList = document.getElementById('review-list');//getting the id of review-list
     
     fetch('http://localhost:3000/beers/1') // The endpoint of accessing the details of beers
         .then(response => response.json())
@@ -34,8 +34,9 @@ const init = () => {
 
 document.addEventListener('DOMContentLoaded', init);
 
+
 // Deliverable 2
- // Function to fetch and render the beer menu
+ // Function to fetch and render the beer list
  function fetchAndRenderBeerList() {
 
     const beerList = document.getElementById('beer-list');
@@ -72,8 +73,8 @@ document.addEventListener('DOMContentLoaded', fetchAndRenderBeerList);
 
 // Deliverable 3
 document.addEventListener('DOMContentLoaded', () => {
-    const reviewForm = document.getElementById('review-form');
-    const reviewList = document.getElementById('review-list');
+    const reviewForm = document.getElementById('review-form');//getting the id of review-form
+    const reviewList = document.getElementById('review-list');//getting the id of review-list
   
     reviewForm.addEventListener('submit', (e) => {
       e.preventDefault(); // Prevent form submission
